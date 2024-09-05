@@ -2,8 +2,12 @@ body {
   background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
 }
 
-#container {
+body * {          /*usando * utiliza para todos os elementos dentro do body*/
+  font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
+}
 
+#container {
   border: 1px solid green;
   width: 360px;
   height: 712px;
@@ -12,8 +16,15 @@ body {
 
 #profile {
   text-align: center;
+  border: 1px red solid;
 }
 
 #profile img {
   width: 112px;
+}
+
+#profile p {
+  font-weight: 500;
+  /* font-size: 16px;  já tem como padrão no navegador os 16px, então não precisa ser utilizado*/ 
+  line-height: 24px;  /*altura da linha*/
 }
