@@ -35,3 +35,18 @@ body * {          /*usando * utiliza para todos os elementos dentro do body*/
   line-height: 24px;  /*altura da linha*/
   margin-top: 8px;
 }
+
+/* links */
+
+ul {
+  list-style: none;
+  border: 1px green solid;
+
+  display: flex;
+  flex-direction: column;   /*deixa os elementos em colunas*/
+  gap: 8px;   /*espaço entre elementos*/
+}
+
+ul li {
+  border: 1px red solid;
+}
