@@ -14,39 +14,58 @@ body * {          /*usando * utiliza para todos os elementos dentro do body*/
 }
 
 #container {
-  width: 360px;
-  height: 712px;
+  width: 22.5rem;
+  height: 44.5rem;
   /* margin: auto;  margin auto defini margin right e left apenas */
-  margin: 56px auto 0px;
+  margin: 3.5rem auto 0px;
 }
 
 #profile {
   text-align: center;
-  padding: 24px;  /*preenchimento interno da box*/
+  padding: 1.5rem;  /*preenchimento interno da box*/
 }
 
 #profile img {
-  width: 112px;
+  width: 7rem;
 }
 
 #profile p {
   font-weight: 500;
   /* font-size: 16px;  já tem como padrão no navegador os 16px, então não precisa ser utilizado*/ 
-  line-height: 24px;  /*altura da linha*/
-  margin-top: 8px;
+  line-height: 1.5rem;  /*altura da linha*/
+  margin-top: 0.5rem;
 }
 
 /* links */
 
 ul {
   list-style: none;
-  border: 1px green solid;
-
   display: flex;
   flex-direction: column;   /*deixa os elementos em colunas*/
-  gap: 8px;   /*espaço entre elementos*/
+  gap: 1rem;   /*espaço entre elementos*/
 }
 
-ul li {
-  border: 1px red solid;
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.5rem; /*1rem (altura) 1.5rem largura*/
+
+  background: rgba(255, 255, 255, 0.1);
+  border: 0.1rem solid rgba(255, 255, 255, 0.5);
+  border-radius: 0.2rem;
+
+  backdrop-filter: blur(0.4rem);
+  -webkit-backdrop-filter: blur(0.4rem);  /*pré requisito chamado -webkit para o navegador Safari 9+*/
+
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: background 0.3s; /*transação da propriedade inserida, ao lado mantém o tempo dela*/
+}
+
+/*pseudo-selector*/
+ul li a:hover {    /*animação para quando passar o cursor*/
+  background: rgba(255, 255, 255, 0.05);
+  border: 0.095rem solid white;
 }
