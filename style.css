@@ -1,3 +1,14 @@
+/*cores de forma global*/
+:root {
+  --text-color: white;
+  --bg-url: url(./assets/bg-mobile.jpg)
+}
+
+.light {
+  --text-color: black;
+  --bg-url: url(./assets/bg-mobile-light.jpg)
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,13 +16,13 @@
 }
 
 body {
-  background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
+  background: var(--bg-url) no-repeat top center/cover;
 }
 
 body * {
   /*usando * utiliza para todos os elementos dentro do body*/
   font-family: "Roboto", sans-serif;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 #container {
@@ -74,7 +85,7 @@ ul li a {
 ul li a:hover {
   /*animação para quando passar o cursor*/
   background: rgba(255, 255, 255, 0.05);
-  border: 0.095rem solid white;
+  border: 0.095rem solid var(--text-color);
 }
 
 /* icons social-links */
