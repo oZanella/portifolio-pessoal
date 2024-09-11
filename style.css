@@ -1,12 +1,20 @@
 /*cores de forma global*/
 :root {
   --text-color: white;
-  --bg-url: url(./assets/bg-mobile.jpg)
+  --bg-url: url(./assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color:rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.2);
 }
 
 .light {
   --text-color: black;
-  --bg-url: url(./assets/bg-mobile-light.jpg)
+  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color:rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(0,0,0,0.1);
 }
 
 * {
@@ -66,8 +74,8 @@ ul li a {
   justify-content: center;
   padding: 1rem 1.5rem; /*1rem (altura) 1.5rem largura*/
 
-  background: rgba(255, 255, 255, 0.1);
-  border: 0.1rem solid rgba(255, 255, 255, 0.5);
+  background: var(--surface-color);
+  border: 0.1rem solid var(--stroke-color);
   border-radius: 0.2rem;
 
   backdrop-filter: blur(0.4rem);
@@ -84,7 +92,7 @@ ul li a {
 /*pseudo-selector*/
 ul li a:hover {
   /*animação para quando passar o cursor*/
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--surface-color-hover);
   border: 0.095rem solid var(--text-color);
 }
 
@@ -108,7 +116,7 @@ ul li a:hover {
 }
 
 #social-links a:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--highlight-color);
   padding: 1rem;
 }
 
