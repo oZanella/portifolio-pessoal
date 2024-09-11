@@ -6,6 +6,7 @@
   --surface-color:rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(255, 255, 255, 0.02);
   --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
 .light {
@@ -15,6 +16,7 @@
   --surface-color:rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0,0,0,0.1);
+  --switch-bg-url: url(./assets/sun.svg)
 }
 
 * {
@@ -41,6 +43,7 @@ body * {
   padding: 0 1.5rem;
 }
 
+/*profile*/
 #profile {
   text-align: center;
   padding: 1.5rem; /*preenchimento interno da box*/
@@ -57,8 +60,17 @@ body * {
   margin-top: 0.5rem;
 }
 
-/* links */
+/*swtich*/
+#swtich button {
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+}
 
+
+/* links */
 ul {
   list-style: none;
   display: flex;
@@ -125,3 +137,4 @@ footer {
   text-align: center;
   font-size: 0.87rem;
 }
+
