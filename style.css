@@ -60,14 +60,36 @@ body * {
   margin-top: 0.5rem;
 }
 
-/*swtich*/
-#swtich button {
-  width: 32px;
-  height: 32px;
+/*switch*/
+
+#switch {
+  border: 1px solid red;
+  position: relative
+}
+
+#switch button {
+  width: 2rem;
+  height: 2rem;
   background: white var(--switch-bg-url) no-repeat center;
   border: 0;
   border-radius: 50%;
+
+  position: absolute;
+  z-index: 1;
 }
+
+#switch span {
+  display: block;
+  height: 1.5rem;     /*altura*/ 
+  width: 4rem;        /*largura*/
+  background: var(--surface-color);
+  border: 0.1rem solid var(--stroke-color);
+  backdrop-filter: blur(0.4rem);
+  --webkit-backdrop-filter: blur(0.4rem);
+  border-radius: 625rem;
+}
+
+
 
 
 /* links */
