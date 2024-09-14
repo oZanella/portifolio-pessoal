@@ -63,8 +63,10 @@ body * {
 /*switch*/
 
 #switch {
-  border: 1px solid red;
-  position: relative
+  position: relative;
+  width: 4rem;  
+
+  margin: 0.25rem auto;
 }
 
 #switch button {
@@ -75,7 +77,15 @@ body * {
   border-radius: 50%;
 
   position: absolute;
+  left: 0;
+  top: 50%;                       /*espaço a 50% da altura do seu elemento pai. */
+  transform: translateY(-50%);    /*transform é uma propriedade que aplica uma transformação ao elemento, movendo-o verticalmente, neste caso move o elemento para cima em 50% da sua própria altura. */
   z-index: 1;
+}
+
+.light #switch button {
+  right: 0;
+  left: initial;
 }
 
 #switch span {
@@ -90,9 +100,8 @@ body * {
 }
 
 
-
-
 /* links */
+
 ul {
   list-style: none;
   display: flex;
