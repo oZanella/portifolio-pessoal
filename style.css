@@ -3,7 +3,7 @@
   --text-color: white;
   --bg-url: url(./assets/bg-mobile.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
-  --surface-color:rgba(255, 255, 255, 0.1);
+  --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(255, 255, 255, 0.02);
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/moon-stars.svg);
@@ -13,10 +13,10 @@
   --text-color: black;
   --bg-url: url(./assets/bg-mobile-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
-  --surface-color:rgba(0, 0, 0, 0.05);
+  --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
-  --highlight-color: rgba(0,0,0,0.1);
-  --switch-bg-url: url(./assets/sun.svg)
+  --highlight-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url(./assets/sun.svg);
 }
 
 * {
@@ -64,7 +64,7 @@ body * {
 /*switch*/
 #switch {
   position: relative;
-  width: 4rem;  
+  width: 4rem;
 
   margin: 0.25rem auto;
 }
@@ -78,27 +78,32 @@ body * {
 
   position: absolute;
   left: 0;
-  top: 50%;                       /*espaço a 50% da altura do seu elemento pai. */
-  transform: translateY(-50%);    /*transform é uma propriedade que aplica uma transformação ao elemento, movendo-o verticalmente, neste caso move o elemento para cima em 50% da sua própria altura. */
+  top: 50%; /*espaço a 50% da altura do seu elemento pai. */
+  transform: translateY(
+    -50%
+  ); /*transform é uma propriedade que aplica uma transformação ao elemento, movendo-o verticalmente, neste caso move o elemento para cima em 50% da sua própria altura. */
   z-index: 1;
+  animation: slide-back 0.3s;
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: slide 0.3s forwards;
+}
+
+#switch button:hover {
+outline: 0.40rem solid var(--highlight-color);
 }
 
 #switch span {
   display: block;
-  height: 1.5rem;     /*altura*/ 
-  width: 4rem;        /*largura*/
+  height: 1.5rem; /*altura*/
+  width: 4rem; /*largura*/
   background: var(--surface-color);
   border: 0.1rem solid var(--stroke-color);
   backdrop-filter: blur(0.4rem);
   --webkit-backdrop-filter: blur(0.4rem);
   border-radius: 625rem;
 }
-
 
 /* links */
 ul {
@@ -170,10 +175,29 @@ footer {
 /* media queries */
 @media (min-width: 700px) {
   :root {
-    --bg-url: url(./assets/bg-desktop.jpg)
+    --bg-url: url(./assets/bg-desktop.jpg);
   }
 
   .light {
-    --bg-url: url(./assets/bg-desktop-light.jpg)
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+/* animation */
+@keyframes slide {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+     left: 0;
   }
 }
