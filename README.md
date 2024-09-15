@@ -13,7 +13,7 @@
 </p>
 
 <p aling="center">
-  <img src="Cover.png" alt="Licence" width="100%">
+  <img src="./assets/preview.png" alt="Licence" width="100%">
 </p>
 
 ## Tecnologias
