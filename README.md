@@ -1,35 +1,33 @@
-<h1 aling="center"> DevLinks </h1>
+<h1 align="center"> DevLinks </h1>
 
-<p aling="center">
+<p align="center">
   Programa exclusivo e gratuito, sendo realizado com auxílio da Rocketseat.
 </p>
 
-<p aling="center">
-  <a href="#-tecnologias">Tecnologias</a>
-  <br>
-  <a href="#-projeto">Projeto</a>
-  <br>
-  <a href="#-licence">Licence</a>
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a> |
+  <a href="#-projeto">Projeto</a> |
+  <a href="#-licence">Licence</a> 
 </p>
 
-<p aling="center">
+<p align="center">
   <img src="./assets/preview.png" alt="Licence" width="100%">
 </p>
 
-## Tecnologias
+## 🚀 Tecnologias
 
 - HTML e CSS
 - JavaScript
 - Git e Github
  
- ## Projeto
+ ##  💻 Projeto
 
- O DevLinks é um site de links para usar como um cartão de visitas online.
+  O DevLinks é um site de links para usar como um cartão de visitas online.
 
- ## Licença
+ ## 📝 Licença
 
- Projeto está sob a licença MIT.
+  Projeto está sob a licença MIT.
 
  ---
 
- Feito com ❤ by Zanella
+ Feito com ❤ by Zanella 🖐🏼
