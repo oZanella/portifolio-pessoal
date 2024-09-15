@@ -27,6 +27,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -61,7 +62,6 @@ body * {
 }
 
 /*switch*/
-
 #switch {
   position: relative;
   width: 4rem;  
@@ -101,7 +101,6 @@ body * {
 
 
 /* links */
-
 ul {
   list-style: none;
   display: flex;
@@ -140,7 +139,6 @@ ul li a:hover {
 }
 
 /* icons social-links */
-
 #social-links {
   display: flex;
   justify-content: center;
@@ -169,3 +167,13 @@ footer {
   font-size: 0.87rem;
 }
 
+/* media queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg)
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg)
+  }
+}
