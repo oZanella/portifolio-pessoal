@@ -28,7 +28,7 @@
 body {
   background: var(--bg-url) no-repeat top center/cover;
   height: 100vh;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 body * {
@@ -92,7 +92,7 @@ body * {
 }
 
 #switch button:hover {
-outline: 0.40rem solid var(--highlight-color);
+  outline: 0.4rem solid var(--highlight-color);
 }
 
 #switch span {
@@ -200,6 +200,6 @@ footer {
     left: 50%;
   }
   to {
-     left: 0;
+    left: 0;
   }
 }
